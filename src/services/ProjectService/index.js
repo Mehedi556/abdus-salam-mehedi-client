@@ -16,6 +16,20 @@ export const getProjects = async () => {
   return res.json();
 };
 
+export const getProjectDetails = async (_id) => {
+  const fetchOptions = {
+    // method: "GET",
+    cache: "no-store",
+    next: {
+      tags: ["project-details"],
+    },
+  };
+  console.log(_id);
+
+  const res = await fetch(`${envConfig.baseApi}/projects/${_id}`, fetchOptions);
+  return res.json();
+};
+
 export const createProject = async (postData) => {
   try {
     const { data } = await axiosInstance.post("/projects", postData, {

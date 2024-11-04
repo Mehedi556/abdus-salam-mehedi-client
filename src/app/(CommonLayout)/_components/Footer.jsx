@@ -17,23 +17,6 @@ const Footer = () => {
           </span>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         {/* Follow Me Section with Logo and Social Icons */}
         <div className="flex flex-col items-center">
           <Image
@@ -98,7 +81,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="text-center text-gray-500 mt-10">
-        <p>&copy; {new Date().getFullYear()} AS Mehedi. All rights reserved.</p>
+        <p>&copy; 2024 AS Mehedi. All rights reserved.</p>
       </div>
     </footer>
   );

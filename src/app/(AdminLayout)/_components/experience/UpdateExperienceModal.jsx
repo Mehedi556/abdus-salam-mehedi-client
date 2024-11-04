@@ -123,6 +123,7 @@ const onSubmit = async (data) => {
                     Add Responsibilities as bullet point
                   </h1>
                   <Button
+                    type="button"
                     className="bg-colorSolid"
                     onClick={() => handleFieldAppend()}
                   >

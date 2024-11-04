@@ -55,7 +55,7 @@ const Blogs = async () => {
             <h3 className="text-3xl font-bold text-white mb-2">{blog.title?.substring(0, 15)}</h3>
             <p className="text-gray-300 mb-4">{blog.description?.substring(0, 100)}</p>
             <a
-              href={`/blog/${blog.slug}`}
+              href={`/blog-details/${blog?._id}`}
               className="inline-block text-indigo-400 hover:text-indigo-600 transition-colors"
             >
               Read More &rarr;

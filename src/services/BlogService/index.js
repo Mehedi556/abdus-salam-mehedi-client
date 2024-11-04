@@ -16,6 +16,20 @@ export const getBlogs = async () => {
   return res.json();
 };
 
+export const getBlogDetails = async (_id) => {
+  const fetchOptions = {
+    // method: "GET",
+    cache: "no-store",
+    next: {
+      tags: ["blog-details"],
+    },
+  };
+  console.log(_id);
+
+  const res = await fetch(`${envConfig.baseApi}/blogs/${_id}`, fetchOptions);
+  return res.json();
+};
+
 export const createBlog = async (postData) => {
   try {
     const { data } = await axiosInstance.post("/blogs", postData, {

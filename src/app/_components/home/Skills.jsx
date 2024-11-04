@@ -22,14 +22,20 @@ import {
   SiNpm,
   SiGithub,
   SiPostman,
+  SiRedux,
+  SiReact
 } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
+import { getSkills } from "@/services/SkillService";
+import Image from "next/image";
 
 // import { useLottie } from "lottie-react";
 // import animationData from "../../../assets/animationForSkills";
 
 const Skills = async () => {
+
+  const { data: skills } = await getSkills();
   
   // const animationContainer = useRef(null);
   // useEffect(() => {
@@ -50,11 +56,11 @@ const Skills = async () => {
   return (
     <div className="py-28 px-5">
       <div className="">
-        <h2 className="text-3xl font-bold text-white">
+        <h2 className="text-3xl font-bold text-white text-center">
           Technologies I Work With
         </h2>
       </div>
-      <div className="sm:flex gap-14 justify-center sm:justify-between items-center mt-20">
+      <div className="sm:flex gap-14 justify-center sm:justify-between items-center mt-12">
         {/* <div className="w-2/3 sm:w-1/3 mx-auto mb-10 sm:mb-0">
           <div ref={animationContainer}>
           </div>
@@ -70,15 +76,35 @@ const Skills = async () => {
           </p>
 
           <div className="flex flex-wrap gap-5 justify-center mt-10 p-5 shadow-lg shadow-colorPrimary rounded-lg">
-            <SiJavascript
-              className="text-yellow-500 bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
+            {
+              skills.map((skill) => (
+                <div key={skill?._id} className="flex flex-col justify-center items-center shadow-md shadow-colorPrimary rounded-lg p-2">
+                  <Image src={skill?.image} height={100} width={100} alt=""/>
+                  <p className="text-white text-sm font-semibold">{skill?.name}</p>
+                </div>
+              ))
+            }
+            {/* <div className="bg-black p-5 flex flex-col justify-center items-center rounded-full shadow-lg shadow-colorPrimary">
+              <SiJavascript
+              className="text-yellow-500 "  
               size={50}
             />
-            <SiNextdotjs
+            <p>JavaScript</p>
+            </div>
+
+            <div className="bg-black p-5 flex flex-col justify-center items-center rounded-full shadow-lg shadow-colorPrimary">
+              <SiNextdotjs
+              className="text-yellow-500 "
+              size={50}
+            />
+            <p>Next.JS</p>
+            </div> */}
+            
+            {/* <SiNextdotjs
               className="text-slate-500 bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
               size={50}
-            />
-            <SiAstro
+            /> */}
+            {/* <SiAstro
               className="text-white bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
               size={50}
             />
@@ -158,6 +184,14 @@ const Skills = async () => {
               className="text-white bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
               size={50}
             />
+            <SiRedux 
+              className="text-white bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
+              size={50}
+            />
+            <SiReact 
+              className="text-white bg-black p-2 rounded-full shadow-lg shadow-colorPrimary"
+              size={50}
+            /> */}
           </div>
         </div>
       </div>
@@ -166,3 +200,4 @@ const Skills = async () => {
 };
 
 export default Skills;
+
