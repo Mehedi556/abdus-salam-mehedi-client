@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image'
 import logo from '../../../assets/logo1.png'
+import { Link } from 'react-scroll';
 
 const NavbarComponent = () => {
     return (
@@ -19,19 +21,25 @@ const NavbarComponent = () => {
                     <div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                         <ul className="flex gap-x-5 flex-col font-medium mt-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                             <li>
-                                <a href="#" className="block py-2 px-3 md:p-0 text-white" aria-current="page">Home</a>
+                                <Link to="home" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Home</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 md:p-0 text-white" aria-current="page">Blogs</a>
+                                <Link to="experiences" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Experience</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 md:p-0 text-white" aria-current="page">About</a>
+                                <Link to="projects" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Projects</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 md:p-0 text-white" aria-current="page">Contact</a>
+                                <Link to="skills" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Skills</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 md:p-0 text-white" aria-current="page">Login</a>
+                                <Link to="blogs" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Blogs</Link>
+                            </li>
+                            <li>
+                                <Link to="about" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">About</Link>
+                            </li>
+                            <li>
+                                <Link to="contact" smooth={true} duration={500} className="block py-2 px-3 md:p-0 text-white">Contact</Link>
                             </li>
                             
                         </ul>

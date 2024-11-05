@@ -161,6 +161,46 @@ const AddProjectModal = ({ children }) => {
                   )}
                 </div>
 
+                <div className="">
+                  <input
+                    type="text"
+                    {...register("frontendGithubLink")}
+                    className="peer w-full px-4 py-2 text-gray-900 bg-gray-100 border-b-2 border-gray-300 rounded-md focus:outline-none transition duration-300 focus:border-blue-500"
+                    placeholder="Project frontend github link"
+                  />
+                  {errors?.frontendGithubLink && (
+                    <p className="text-xs text-red-400 font-bold">
+                      {errors?.frontendGithubLink?.message}
+                    </p>
+                  )}
+                </div>
+                <div className="">
+                  <input
+                    type="text"
+                    {...register("backendGithubLink")}
+                    className="peer w-full px-4 py-2 text-gray-900 bg-gray-100 border-b-2 border-gray-300 rounded-md focus:outline-none transition duration-300 focus:border-blue-500"
+                    placeholder="Project backend github link"
+                  />
+                  {errors?.backendGithubLink && (
+                    <p className="text-xs text-red-400 font-bold">
+                      {errors?.backendGithubLink?.message}
+                    </p>
+                  )}
+                </div>
+                <div className="">
+                  <input
+                    type="text"
+                    {...register("liveLink")}
+                    className="peer w-full px-4 py-2 text-gray-900 bg-gray-100 border-b-2 border-gray-300 rounded-md focus:outline-none transition duration-300 focus:border-blue-500"
+                    placeholder="Project live link"
+                  />
+                  {errors?.liveLink && (
+                    <p className="text-xs text-red-400 font-bold">
+                      {errors?.liveLink?.message}
+                    </p>
+                  )}
+                </div>
+
                 <div className="flex justify-between items-center  px-2 ">
                   <h1 className="text-sm text-black">
                     Add Features as bullet point

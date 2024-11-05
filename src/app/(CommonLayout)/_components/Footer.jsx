@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-gray-300">
         {/* Quick Links Section */}
         <div>
-          <p className="text-xl font-semibold text-indigo-400">Quick Links</p>
+          <p className="text-xl font-semibold text-white mb-3">Quick Links</p>
           <span className="mt-5 space-y-2">
             <p>About Me</p>
             <p>Projects</p>
@@ -26,7 +26,7 @@ const Footer = () => {
             alt="Your Logo"
             className="mb-4"
           />
-          <h3 className="text-xl font-semibold text-indigo-400">Follow Me</h3>
+          <h3 className="text-xl font-semibold text-white">Follow Me</h3>
           <div className="mt-3 flex space-x-4">
             <svg
               className="w-6 h-6"
@@ -57,26 +57,42 @@ const Footer = () => {
           </div>
         </div>
 
+
+
+
+
+
+
+
+
         {/* Newsletter Section */}
         <div className="w-4/5 ml-auto">
-          <h3 className="text-xl font-semibold text-indigo-400">Newsletter</h3>
+          <h3 className="text-xl font-semibold text-white">Newsletter</h3>
           <p className="mt-3">
             Stay updated with my latest projects and blog posts.
           </p>
-          <form className="mt-3 flex">
+          <div className="mt-3 flex">
             <input
               type="email"
               placeholder="Your email"
               className="w-full px-3 py-2 rounded-l-lg text-gray-900"
             />
             <button
-              type="submit"
-              className="bg-indigo-500 text-white px-4 rounded-r-lg hover:bg-indigo-600 transition-colors"
+              type="button"
+              className="bg-colorSecondary text-white px-4 rounded-r-lg hover:bg-indigo-600 transition-colors"
             >
               Subscribe
             </button>
-          </form>
+          </div>
         </div>
+
+
+
+
+
+
+
+
       </div>
 
       {/* Copyright */}

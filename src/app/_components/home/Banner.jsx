@@ -1,9 +1,9 @@
-"use client"
+// "use client"
 import React from "react";
 // import { useLottie } from "lottie-react";
-import animation from '../../../../public/animationData';
+// import animation from '../../../../public/animationData';
 import { Button } from "../../../components/ui/button";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 
 const Banner = () => {
   // const options = {
@@ -13,7 +13,7 @@ const Banner = () => {
 
   // const { View } = useLottie(options);
   return (
-    <div className="flex gap-3 justify-between items-center my-24 sm:my-32">
+    <div className="flex gap-3 justify-between items-center my-24 sm:my-56">
       <div className="flex-1">
         <h1 className="text-4xl">{"Hello There, It's"}</h1>
         <h2 className="text-7xl my-2">Abdus Salam Mehedi</h2>
@@ -43,7 +43,7 @@ const Banner = () => {
       </div>
       <div className="shadow-lg rounded-full shadow-slate-400">
         {/* {View} */}
-        <Lottie animationData={animation} loop={true} />
+        {/* <Lottie animationData={animation} loop={true} /> */}
       </div>
     </div>
   );

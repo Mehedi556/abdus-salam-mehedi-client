@@ -1,5 +1,7 @@
 import { getProjectDetails } from '@/services/ProjectService'
+import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const page = async ({params}) => {
@@ -14,16 +16,21 @@ const page = async ({params}) => {
         width={100}
           src={data?.logo}
           alt="Project Logo"
-          className=" mx-auto mb-4 animate-pulse"
+          className=" mx-auto mb-2 animate-pulse"
         />
-        <h1 className="text-4xl font-bold">{data?.title}</h1>
+        <h1 className="text-4xl font-bold mb-4">{data?.title}</h1>
+        <div className='flex justify-center items-center gap-x-5'>
+          <Link className='flex items-center text-white gap-x-1' href={data?.frontendGithubLink} target="_blank"><p>Frontend Link</p> <ExternalLink size={20}/></Link>
+          <Link className='flex items-center text-white gap-x-1' href={data?.backendGithubLink} target="_blank"><p>Backend Link</p> <ExternalLink size={20}/></Link>
+          <Link className='flex items-center text-white gap-x-1' href={data?.liveLink} target="_blank"><p>Live Link</p> <ExternalLink size={20}/></Link>
+        </div>
         {/* <p className="text-lg opacity-90">
           Your Go-To Platform for Discovering and Sharing Amazing Recipes
         </p> */}
       </header>
 
       {/* Main Content */}
-      <main className="flex flex-col items-center pt-10 pb-16 w-full max-w-full px-6">
+      <main className="flex flex-col items-center pt-5 pb-16 w-full max-w-full px-6">
         {/* Project Image */}
         <div className="w-full  rounded-lg overflow-hidden shadow-lg">
           <img
