@@ -33,8 +33,10 @@ const page = () => {
         <div id="about">
           <About />
         </div>
-
-        {/* <Contact /> */}
+        <div id="contact">
+          <Contact />
+        </div>
+        
 
       </div>
     </div>

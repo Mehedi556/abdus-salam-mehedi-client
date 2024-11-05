@@ -19,7 +19,7 @@ const page = async ({params}) => {
       });
   return (
     <div className="min-h-screen bg-colorSolid text-white flex items-center justify-center p-4">
-      <div className=" max-w-[1260px] mx-5 rounded-lg overflow-hidden shadow-lg shadow-colorPrimary">
+      <div className=" max-w-[1260px] rounded-lg overflow-hidden shadow-lg shadow-colorPrimary">
         {/* Image Section */}
         <div className="relative h-[400px]">
           <img
@@ -36,7 +36,7 @@ const page = async ({params}) => {
 
         {/* Content Section */}
         <div className="p-6 md:p-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-gradient bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500">
+          <h1 className="text-2xl md:text-4xl font-bold text-gradient bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500">
             {data?.title}
           </h1>
           <p className="text-gray-400 mt-2">by Abdus Salam Mehedi</p>

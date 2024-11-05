@@ -13,10 +13,10 @@ const Projects = async () => {
       <div className="px-4 sm:px-0">
         {/* Section Title */}
         <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-white">
+        <h2 className="text-xl sm:text-3xl font-bold text-white">
         {"Projects I've Built"}
         </h2>
-          <p className="mt-4 text-lg text-gray-400">
+          <p className="mt-4 text-sm sm:text-lg text-gray-300">
             {
               "Explore the innovative projects I've built with modern tools and technologies."
             }
@@ -27,9 +27,9 @@ const Projects = async () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row ${
+            className={`flex gap-3 flex-col md:flex-row ${
               index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-            } mb-12 p-6 rounded-lg shadow-md shadow-colorPrimary`}
+            } mb-12 py-6 px-0 sm:px-6 rounded-lg shadow-md shadow-colorPrimary`}
           >
             {/* Project Image */}
             <div className="relative w-full md:w-1/2 h-64 md:h-80 overflow-hidden rounded-lg shadow-md shadow-colorPrimary">

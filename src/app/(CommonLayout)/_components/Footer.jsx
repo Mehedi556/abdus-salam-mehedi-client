@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-gray-900 py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-gray-300">
         {/* Quick Links Section */}
-        <div>
+        <div className="text-center lg:text-left col-span-3 sm:col-span-2 lg:col-span-1">
           <p className="text-xl font-semibold text-white mb-3">Quick Links</p>
           <span className="mt-5 space-y-2">
             <p>About Me</p>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* Follow Me Section with Logo and Social Icons */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center col-span-3 sm:col-span-2 lg:col-span-1">
           <Image
             src={logo}
             height={50}
@@ -58,15 +58,8 @@ const Footer = () => {
         </div>
 
 
-
-
-
-
-
-
-
         {/* Newsletter Section */}
-        <div className="w-4/5 ml-auto">
+        <div className="w-3/5 lg:w-4/5 col-span-3 lg:col-span-1 mx-auto lg:ml-auto text-center">
           <h3 className="text-xl font-semibold text-white">Newsletter</h3>
           <p className="mt-3">
             Stay updated with my latest projects and blog posts.

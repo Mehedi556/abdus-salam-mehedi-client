@@ -8,15 +8,15 @@ const Experience = async () => {
   return (
     <section
       id="experience"
-      className=" py-16 my-28 rounded-lg shadow-xl shadow-colorPrimary"
+      className=" py-16 my-28 rounded-lg shadow-xl shadow-colorPrimary mx-4 xl:mx-0"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-white">
+          <h2 className="text-xl sm:text-3xl font-bold text-white">
             Where I previously worked
           </h2>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-sm sm:text-lg text-gray-300">
             My journey from an intern to a full-time full stack developer.
           </p>
         </div>

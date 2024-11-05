@@ -14,10 +14,10 @@ const Banner = () => {
   // const { View } = useLottie(options);
   return (
     <div className="flex gap-3 justify-between items-center my-24 sm:my-56">
-      <div className="flex-1">
-        <h1 className="text-4xl">{"Hello There, It's"}</h1>
-        <h2 className="text-7xl my-2">Abdus Salam Mehedi</h2>
-        <p className="text-gray-300 text-xl">
+      <div className="flex-1 px-4 xl:px-0">
+        <h1 className="text-2xl sm:text-4xl">{"Hello There, It's"}</h1>
+        <h2 className="text-4xl sm:text-7xl my-2">Abdus Salam Mehedi</h2>
+        <p className="text-gray-300 text-base sm:text-xl">
           Web developer with a passion for discovering new tech and creating
           seamless, intuitive applications. Continuously learning and improving
           with each project.
@@ -25,7 +25,7 @@ const Banner = () => {
 
         <div className="flex gap-3 mt-10">
           <a href="/abdus-salam-mehedi-resume.pdf" download="My_Resume.pdf">
-            <Button className="bg-gray-500 shadow-lg shadow-slate-400 py-6">
+            <Button className="bg-gray-500 shadow-lg shadow-slate-400 py-3 sm:py-6">
               Download my resume
             </Button>
           </a>
@@ -35,7 +35,7 @@ const Banner = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-slate-300 shadow-lg shadow-slate-400 py-6 text-slate-700 font-bold hover:text-white">
+            <Button className="bg-slate-300 shadow-lg shadow-slate-400 py-3 sm:py-6 text-slate-700 font-bold hover:text-white">
               See my resume
             </Button>
           </a>

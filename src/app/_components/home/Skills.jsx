@@ -54,19 +54,19 @@ const Skills = async () => {
 
   // const { View } = reactLottie.useLottie(options);
   return (
-    <div className="py-28 px-5">
+    <div className=" py-10 sm:py-28 px-4">
       <div className="">
-        <h2 className="text-3xl font-bold text-white text-center">
+        <h2 className="text-xl sm:text-3xl font-bold text-white text-center">
           Technologies I Work With
         </h2>
       </div>
-      <div className="sm:flex gap-14 justify-center sm:justify-between items-center mt-12">
+      <div className="sm:flex gap-14 justify-center sm:justify-between items-center mt-4">
         {/* <div className="w-2/3 sm:w-1/3 mx-auto mb-10 sm:mb-0">
           <div ref={animationContainer}>
           </div>
         </div> */}
         <div className="flex-1">
-          <p className="text-gray-300 text-xl">
+          <p className="text-gray-300 text-sm sm:text-xl">
             I build dynamic, full-stack web applications using React, Next.js,
             and Node.js. From designing responsive front-ends with Tailwind CSS
             to developing robust back-ends with Express and MongoDB, I manage

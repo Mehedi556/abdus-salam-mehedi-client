@@ -23,14 +23,14 @@ import React from 'react'
 const Blogs = async () => {
   const { data: blogs } = await getBlogs();
   return (
-    <section id="blog" className="py-16 ">
+    <section id="blog" className="py-10 sm:py-16 ">
   <div className=" px-4 sm:px-0">
     {/* Section Title */}
     <div className="text-center mb-12">
-    <h2 className="text-3xl font-bold text-white">
+    <h2 className="text-xl sm:text-3xl font-bold text-white">
     Insights & Stories
         </h2>
-      <p className="mt-4 text-lg text-gray-400">
+      <p className="mt-4 text-sm sm:text-lg text-gray-300">
         Discover the latest articles on development, tech, and more.
       </p>
     </div>
